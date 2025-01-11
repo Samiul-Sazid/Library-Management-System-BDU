@@ -1,2 +1,13 @@
 # Library-Management-System-BDU
-Obtain a database-driven system that manages book inventory, member information, Payments, and transactions. Provides a secure login system for admins and members. Ensures accurate tracking of book reservations and returns.
+
+**How to run the code**
+
+1. Install mysql workbench and run the file named  LMS New Database on workbench
+2. Install node.js globlally
+3. Run the command in termina to install express "npm i express"    
+4. Run "npm i mysql2"
+5. Run "npm i @types/body-parser"
+6. Run "npm install -g nodemon"
+7. To start the server "nodemon app.js"
+8. To run the code locally "http://localhost:8080/login"
+   
