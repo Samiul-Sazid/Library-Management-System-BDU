@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Transactions - BDU Library Management System</title>
+    <link rel="stylesheet" href="user-panel-style.css">
+    <style>
+        .highlight-red {
+            color: rgb(9, 4, 4);
+        }
+        .scrollable {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Transactions</h1>
+        <div class="scrollable">
+            <table id="transaction-table">
+                <thead>
+                    <tr>
+                        <th class="highlight-red">Transaction ID</th>
+                        <th class="highlight-red">Admin ID</th>
+                        <th class="highlight-red"> Member ID</th>
+                        <th class="highlight-red">Book Name</th>
+                        <th class="highlight-red">Reserve Date</th>
+                        <th class="highlight-red">Return Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% transactions.forEach(transaction => { %>
+                        <tr>
+                            <td><%= transaction.Sequence %></td>
+                            <td><%= transaction.Admin_id %></td>
+                            <td><%= transaction.Member_id %></td>
+                            <td><%= transaction.Book_name %></td>
+                            <td><%= transaction.ReserveDate %></td>
+                            <td class="highlight-red"><%= transaction.ReturnDate %></td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </div>
+        <a href="/user-panel" class="back-button">Back to User Panel</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('admin-panel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 15px;
+    max-width: 900px;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.tab-button, .back-button, button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tab-button:hover, .back-button:hover, button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.logout-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #f44336;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 2rem;
+}
+.action-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+#add-payment-button {
+    margin-top: 1rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#add-payment-button:hover {
+    background-color: #45a049;
+}
+
+/* Date Section Styling */
+.date-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.date-section label {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.date-section input[type="date"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #736c6c;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.date-section input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Transactions - BDU Library Management System</title>
+    <link rel="stylesheet" href="/admin-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Record a Transaction</h1>
+        <form action="/admin-transactions" method="POST">
+            <label for="member-id">Member ID:</label>
+            <input type="text" id="member-id" name="memberId" placeholder="Enter Member ID" required>
+
+            <!-- <label for="reserve-date">Reserve Date:</label>
+            <input type="date" id="reserve-date" name="reserveDate" required>
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="returnDate" required> -->
+
+            <div class="date-section">
+                <label for="reserve-date">Reserve Date</label>
+                <input type="date" id="reserve-date" name="reserveDate">
+            
+                <label for="return-date">Return Date</label>
+                <input type="date" id="return-date" name="returnDate">
+            </div>
+            
+
+            <label for="book-id">Select Book:</label>
+            <select id="book-id" name="bookId" required>
+                <% books.forEach(book => { %>
+                    <option value="<%= book.Book_id %>"><%= book.Book_name %> by <%= book.Author_name %></option>
+                <% }) %>
+            </select>
+
+            <button type="submit">Submit Transaction</button>
+        </form>
+        <a href="/admin-panel" class="back-button">Back to Admin Panel</a>
+    </div>
+</body>
+</html>

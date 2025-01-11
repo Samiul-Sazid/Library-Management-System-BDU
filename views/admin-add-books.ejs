@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Books - BDU Library Management System</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Books</h1>
+        <form id="add-book-form" method="POST" action="/admin-add-books">
+            <input type="text" name="bookName" placeholder="Book Name" required>
+            <input type="text" name="authorName" placeholder="Author Name" required>
+            <input type="number" name="quantity" placeholder="Quantity" min="1" required>
+            <button type="submit">Add Book</button>
+        </form>
+        <a href="/admin-panel" class="back-button">Back to Admin Panel</a>
+    </div>
+</body>
+</html>

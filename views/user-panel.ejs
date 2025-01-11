@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Panel - BDU Library Management System</title>
+    <link rel="stylesheet" href="user-panel-style.css">
+</head>
+<body>
+    <div class="container user-panel">
+        <h1>Library Management System</h1>
+        <h2>BDU</h2>
+        <nav class="tab-buttons">
+            <a href="/profile" class="tab-button">Profile</a>
+            <a href="/user-transactions" class="tab-button">Transaction</a>
+            <a href="/search-books" class="tab-button">Search Books</a>
+            <a href="/payment" class="tab-button">Payments</a>
+            <a href="/authors" class="tab-button">Book Authors</a>
+        </nav>
+        <button id="logout-button" class="logout-button" onclick="location.href='/logout'">Logout</button>
+    </div>
+    <script src="/js/user-panel-js.js"></script>
+</body>
+</html>

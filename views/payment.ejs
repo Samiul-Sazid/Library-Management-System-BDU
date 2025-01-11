@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - BDU Library Management System</title>
+    <link rel="stylesheet" href="/user-panel-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Information</h1>
+        <p><strong>Member ID:</strong> <%= memberId %></p>
+        <p><strong>Last Paid Date:</strong> <%= lastPaidDate %></p>
+        <p><strong>Days Left to Pay:</strong> <%= paymentDue ? 'Payment is due' : daysLeft %></p>
+
+        <% if (paymentDue) { %>
+            <form action="/payment" method="POST">
+                <button type="submit">Pay Now</button>
+            </form>
+        <% } else { %>
+            <p class="success-message">No payment due. You are up to date!</p>
+        <% } %>
+
+        <a href="/user-panel" class="back-button">Back to User Panel</a>
+    </div>
+</body>
+</html>

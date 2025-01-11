@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Authors - BDU Library Management System</title>
+    <link rel="stylesheet" href="/user-panel-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Authors</h1>
+        <ul id="author-list">
+            <% authors.forEach(author => { %>
+                <li><%= author.Author_name %></li>
+            <% }) %>
+        </ul>
+        <a href="/user-panel" class="back-button">Back to User Panel</a>
+    </div>
+</body>
+</html>

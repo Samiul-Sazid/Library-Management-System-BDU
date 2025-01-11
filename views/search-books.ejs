@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Books - BDU Library Management System</title>
+    <link rel="stylesheet" href="/user-panel-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Books</h1>
+        <div class="search-container">
+            <form action="/search-books" method="GET">
+                <input 
+                    type="text" 
+                    id="book-search" 
+                    name="query" 
+                    placeholder="Enter book title or author" 
+                    value="<%= query || '' %>">
+                <button type="submit" id="search-button">Search</button>
+            </form>
+        </div>
+
+        <div id="search-results">
+            <% if (books && books.length > 0) { %>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book ID</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% books.forEach(book => { %>
+                            <tr>
+                                <td><%= book.Book_id %></td>
+                                <td><%= book.Book_name %></td>
+                                <td><%= book.Author_name %></td>
+                                <td><%= book.Quantity %></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            <% } else { %>
+                <p>No books found.</p>
+            <% } %>
+        </div>
+        <a href="/user-panel" class="back-button">Back to User Panel</a>
+    </div>
+</body>
+</html>

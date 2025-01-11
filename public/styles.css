@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('forest-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 3rem; /* Increased padding */
+    border-radius: 15px; /* Rounded corners */
+    text-align: center;
+    color: white;
+    max-width: 500px; /* Set maximum width */
+    width: 90%; /* Responsive width */
+}
+
+h1 {
+    font-size: 3rem; /* Increased font size */
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem; /* Slightly larger subtitle */
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Increased gap between buttons */
+}
+
+button {
+    padding: 0.7rem 1.5rem; /* Larger buttons */
+    font-size: 1.2rem; /* Increased font size */
+    background-color: white;
+    border: none;
+    border-radius: 10px; /* Rounded button corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increased gap between inputs */
+}
+
+input {
+    padding: 0.7rem 1rem; /* Larger input boxes */
+    font-size: 1.2rem; /* Increased font size */
+    border: 1px solid white;
+    border-radius: 10px; /* Rounded input corners */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.cross-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem; /* Larger close button */
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.container a {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container a:hover {
+    background-color: #81C784; /* Lighter green on hover */
+    color: black; /* Black text on hover */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Adjust for smaller screens */
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    input {
+        font-size: 1rem; /* Slightly smaller input text */
+    }
+    button {
+        font-size: 1rem;
+    }
+    .container {
+        padding: 2rem; /* Adjust padding for smaller screens */
+    }
+}

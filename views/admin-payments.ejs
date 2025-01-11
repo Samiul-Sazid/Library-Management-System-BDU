@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Payments - BDU Library Management System</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payments</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Last Payment</th>
+                    <th>Status</th>
+                    <th>Due Months</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% payments.forEach(payment => { %>
+                    <tr>
+                        <td><%= payment.Member_id %></td>
+                        <td><%= payment.Member_name %></td>
+                        <td><%= payment.LastPayment ? payment.LastPayment : "N/A" %></td>
+                        <td><%= payment.Status %></td>
+                        <td><%= payment.DueMonths %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+        <a href="/admin-panel" class="back-button">Back to Admin Panel</a>
+    </div>
+</body>
+</html>

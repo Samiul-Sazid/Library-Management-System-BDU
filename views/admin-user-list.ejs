@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List - BDU Library Management System</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User List</h1>
+        <div class="search-container">
+            <input type="text" id="user-search" placeholder="Search users...">
+            <button id="search-button">Search</button>
+        </div>
+        <table id="user-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Loop through users and display them in the table -->
+                <% users.forEach(user => { %>
+                    <tr>
+                        <td><%= user.Member_id %></td>
+                        <td><%= user.Firstname %> <%= user.Lastname %></td>
+                        <td><%= user.Email %></td>
+                        <td><%= user.Phone %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+        <a href="/admin-panel" class="back-button">Back to Admin Panel</a>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

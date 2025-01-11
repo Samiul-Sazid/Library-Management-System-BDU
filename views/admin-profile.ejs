@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile - BDU Library Management System</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Profile</h1>
+        <div class="profile-details">
+            <p><strong>ID:</strong> <%= admin.Admin_id %></p>
+            <p><strong>Name:</strong> <%= admin.Admin_name %></p>
+            <p><strong>Email:</strong> <%= admin.Admin_mail %></p>
+            <p><strong>Phone:</strong> <%= admin.Phone %></p>
+        </div>
+        <a href="/admin-edit-profile" class="back-button">Edit Profile</a>
+        <a href="/admin-panel" class="back-button">Back to Admin Panel</a>
+    </div>
+</body>
+</html>

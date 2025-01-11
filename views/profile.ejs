@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - BDU Library Management System</title>
+    <link rel="stylesheet" href="/user-panel-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profile</h1>
+        <div class="profile-info">
+            <p><strong>Member ID:    </strong> <span id="member-id"><%= profile.Member_id %></span></p>
+            <p><strong>Full Name:    </strong> <span id="user-fullname"><%= profile.Firstname %> <%= profile.Lastname %></span></p>
+            <p><strong>Email:        </strong> <span id="user-email"><%= profile.Email %></span></p>
+            <p><strong>Username:     </strong> <span id="user-username"><%= profile.Username %></span></p>
+            <p><strong>Phone Number: </strong> <span id="user-phone"><%= profile.Phone %></span></p>
+            <p><strong>Address:      </strong> <span id="user-address"><%= profile.Address %></span></p>
+            <p><strong>Birthdate:    </strong> <span id="user-birthdate"><%= profile.Birthdate %></span></p>
+        </div>
+        <button id="edit-profile" onclick="location.href='/edit-profile/<%= profile.Member_id %>'">Edit Profile</button>
+        <a href="/user-panel" class="back-button">Back to User Panel</a>
+    </div>
+    <script src="/scripts/user-panel-js.js"></script>
+</body>
+</html>

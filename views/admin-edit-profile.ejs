@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - BDU Library Management System</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Profile</h1>
+        <form action="/admin-edit-profile" method="POST">
+            <div class="form-group">
+                <label for="admin-name">Name:</label>
+                <input type="text" id="admin-name" name="adminName" value="<%= admin.Admin_name %>" required>
+            </div>
+            <div class="form-group">
+                <label for="admin-email">Email:</label>
+                <input type="email" id="admin-email" name="adminEmail" value="<%= admin.Admin_mail %>" required readonly>
+            </div>
+            <div class="form-group">
+                <label for="admin-phone">Phone:</label>
+                <input type="text" id="admin-phone" name="adminPhone" value="<%= admin.Phone %>" required>
+            </div>
+            <button type="submit">Update Profile</button>
+        </form>
+        <a href="/admin-profile" class="back-button">Back to Profile</a>
+    </div>
+</body>
+</html>

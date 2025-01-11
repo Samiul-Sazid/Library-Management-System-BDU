@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="container admin-panel">
+        <h1>Library Management System</h1>
+        <h2>BDU Admin Panel</h2>
+        <nav class="tab-buttons">
+            <!-- Link dynamically to routes for User List, Add Books, etc. -->
+            <a href="/admin-user-list" class="tab-button">User List</a>
+            <a href="/admin-add-books" class="tab-button">Add Books</a>
+            <a href="/search-books" class="tab-button">See Books</a>
+            <a href="/admin-add-admins" class="tab-button">Add Admins</a>
+            <a href="/admin-transactions" class="tab-button">Transactions</a>
+            <a href="/admin-payments" class="tab-button">Payments</a>
+            <a href="/admin-profile" class="tab-button">Admin Profile</a>
+        </nav>
+        <!-- Logout button -->
+        <button id="logout-button" class="logout-button" onclick="location.href='/logout'">Logout</button>
+    </div>
+    <script src="/scripts/admin-script.js"></script>
+</body>
+</html>
