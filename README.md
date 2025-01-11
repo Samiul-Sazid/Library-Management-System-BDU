@@ -5,10 +5,6 @@ User Panel:
 Admin Panel:
 ![image](https://github.com/user-attachments/assets/3612b74d-e5eb-4540-829f-665edd0a6268)
 
-
-
-Screenshot 2025-01-11 195014.png
-Screenshot 2025-01-11 212826.png
 **How to run the code**
 
 1. Install mysql workbench and run the file named  LMS New Database on workbench
