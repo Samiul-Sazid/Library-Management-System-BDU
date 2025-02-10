@@ -21,6 +21,7 @@ CREATE TABLE Members (
 CREATE TABLE Admin (
     Admin_id INT PRIMARY KEY AUTO_INCREMENT,
     Admin_mail VARCHAR(100),
+    Admin_name VARCHAR(50),
     Phone VARCHAR(15),
     Password VARCHAR(100)
 );
@@ -65,8 +66,8 @@ INSERT INTO Members (Member_id, Username, Address, Birthdate) VALUES
 ('2101049','Sammo','Naogaon', '2002-03-18' );
 
 -- Inserting into Admin table (Admin_id as INT)
-INSERT INTO Admin (Admin_id, Admin_mail, Phone, Password) VALUES
-(2102001, 'admin01@example.com', '01812345678', 'password');
+INSERT INTO Admin (Admin_id, Admin_name, Admin_mail, Phone, Password) VALUES
+(2102001,'Meshkat', 'admin01@example.com', '01812345678', 'password');
 
 -- Inserting more books into the Books table
 INSERT INTO Books (Book_name, Author_name, Quantity) VALUES
@@ -88,6 +89,3 @@ INSERT INTO Transaction (ReserveDate, ReturnDate, Book_id, Admin_id, Member_id) 
 -- Inserting into Payments table (Foreign Key: Member_id)
 INSERT INTO Payments (Member_id, Amount, PaymentDate) VALUES
 (2101049, 100, '2024-12-01');
-
-
-
