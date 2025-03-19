@@ -82,8 +82,3 @@ Once the server is running, you can access the system by navigating to:
 
 ---
 
-**Happy coding!** 🚀
-
---- 
-
-This README includes detailed instructions and a professional layout to help users and contributors. Let me know if you'd like to adjust any sections!
