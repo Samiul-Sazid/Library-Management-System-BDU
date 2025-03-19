@@ -1,58 +1,89 @@
-Library Management System - BDU
-Welcome to the Library Management System (LMS) for BDU! This system provides an intuitive platform for both users and administrators to manage library activities seamlessly.
+# Library Management System - BDU
 
-Screenshots
-User Panel
-![image](https://github.com/user-attachments/assets/811d99e1-781b-46c0-813d-367b48cb4ce5)
+Welcome to the **Library Management System (LMS)** for BDU! This system provides an intuitive platform for both **users** and **administrators** to manage library activities seamlessly.
 
-Admin Panel
-![image](https://github.com/user-attachments/assets/3612b74d-e5eb-4540-829f-665edd0a6268)
+## Screenshots
 
-Features
-User Panel:
-Borrow and return books easily
-Search and explore available books
-View borrowing history
-Admin Panel:
-Add, remove, and update books
-Manage user accounts
-Track book borrowing details and user activity
-Prerequisites
+### User Panel
+![User Panel](https://github.com/user-attachments/assets/811d99e1-781b-46c0-813d-367b48cb4ce5)
+
+### Admin Panel
+![Admin Panel](https://github.com/user-attachments/assets/3612b74d-e5eb-4540-829f-665edd0a6268)
+
+---
+
+## Features
+
+- **User Panel:**
+  - Borrow and return books easily
+  - Search and explore available books
+  - View borrowing history
+  
+- **Admin Panel:**
+  - Add, remove, and update books
+  - Manage user accounts
+  - Track book borrowing details and user activity
+  
+---
+
+## Prerequisites
+
 To run this project locally, you'll need the following:
 
-MySQL Workbench to manage the database
-Node.js installed globally
-Installation & Setup
+1. **MySQL Workbench** to manage the database
+2. **Node.js** installed globally
+
+---
+
+## Installation & Setup
+
 Follow the steps below to get your system up and running:
 
-1. Install MySQL Workbench
-Install MySQL Workbench on your machine and run the SQL file LMS New Database to set up the database.
+### 1. Install MySQL Workbench
+Install MySQL Workbench on your machine and run the SQL file `LMS New Database` to set up the database.
 
-2. Install Node.js
-Make sure Node.js is installed globally. You can download it from here.
+### 2. Install Node.js
+Make sure **Node.js** is installed globally. You can download it from [here](https://nodejs.org/).
 
-3. Install Dependencies
+### 3. Install Dependencies
 Open your terminal and install the required packages by running the following commands:
 
-
+```bash
 npm i express
 npm install express-session
 npm i ejs
 npm i mysql2
 npm i @types/body-parser
 npm install -g nodemon
-4. Start the Server
+```
+
+### 4. Start the Server
 To run the application locally, execute:
 
-
+```bash
 nodemon app.js
-5. Access the Application
+```
+
+### 5. Access the Application
 Once the server is running, you can access the system by navigating to:
 
-http://localhost:8080/login
+[http://localhost:8080/login](http://localhost:8080/login)
 
-Folder Structure
-app.js - Main application entry point.
-views/ - Contains the EJS templates for the user and admin panels.
-public/ - Includes CSS, JS, and images for styling and front-end functionalities.
-models/ - Database models for interacting with MySQL.
+---
+
+## Folder Structure
+
+- **`app.js`** - Main application entry point.
+- **`views/`** - Contains the EJS templates for the user and admin panels.
+- **`public/`** - Includes CSS, JS, and images for styling and front-end functionalities.
+- **`models/`** - Database models for interacting with MySQL.
+
+---
+
+---
+
+**Happy coding!** 🚀
+
+--- 
+
+This README includes detailed instructions and a professional layout to help users and contributors. Let me know if you'd like to adjust any sections!
